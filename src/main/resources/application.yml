@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dev_db
+    username: db_user
+    password: pwd
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+application:
+  security:
+    tokenSecret: insertSharedSecret
+
